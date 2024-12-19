@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.movie-container, .showtime-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    background-color: #444;
+    height: 50px;
+    width: 75%;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.seat {
+    background-color: #444;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.seat.selected {
+    background-color: #ff9800;
+}
+
+.seat.occupied {
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.showcase .seat {
+    margin: 0 10px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.showcase li small {
+    margin-left: 10px;
+}
+
+.text {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.space {
+    width: 30px;
+}
+.showtime-container label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.movie-container, .showtime-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.showtime-container label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.showtime-container select {
+    padding: 10px 50px 10px 10px; /* Increased right padding to make space for larger icon */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    background: white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="orange" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-size: 24px; /* Adjust background-size to match the new icon size */
+}
+
+.showtime-container select:focus {
+    border-color: #888;
+    outline: none;
+}
+
+.showtime-container {
+    position: relative;
+    display: inline-block;
+}
+#confirmBookingBtn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmBookingBtn:hover {
+    background-color: #ff9f00; /* Darker shade of orange on hover */
+}

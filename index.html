@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lecture Hall Booking</h1>
+        <form id="bookingForm">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="lecture">Select Lecture:</label>
+            <select id="lecture" name="lecture" required>
+                <option value="Lecture 1">Lecture 1 - Introduction to Programming</option>
+                <option value="Lecture 2">Lecture 2 - Advanced Mathematics</option>
+                <option value="Lecture 3">Lecture 3 - Modern Physics</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div id="confirmationMessage"></div>
+
+        <input type="text" id="searchInput" placeholder="Search bookings...">
+
+        <h2>Booked Lectures</h2>
+        <ul id="bookingsList"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Set a width for the image */
+    height: 100px; /* Set the height to the same value as the width to make it a square */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.join-now {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('dsult.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #ff9800;
+    text-align: left;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.get-started {
+    background-color: #fff;
+    color: #ff9800;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.classes-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.classes-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.classes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.class-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.class-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.book-now {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.classes-container {
+    display: flex;
+    gap: 20px; /* Adjust the spacing between the cards */
+    justify-content: center; /* Centers the cards horizontally */
+}
+
+.class-card {
+    background-color: #f9f9f9; /* Optional: background color for the card */
+    padding: 20px;
+    border-radius: 10px; /* Rounds the corners of the card */
+    text-align: center; /* Centers the text inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visual effect */
+}
+
+.class-card img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px; /* Rounds the edges of the image */
+    margin-bottom: 15px; /* Adds space between the image and the text */
+}

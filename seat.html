@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Seats 
+    </title>
+    <link rel="stylesheet" href="seat.css">
+</head>
+<body>
+    <h1>Select Your Seats</h1>
+    <div class="movie-container">
+       
+       
+    </div>
+    <div class="showtime-container">
+        <label>Pick a Lecture Time:</label>
+        <select id="showtime">
+            <option value="1">8:45 - 9:40 AM</option>
+            <option value="2">9:40 - 10:35 AM</option>
+            <option value="3">11:00 - 11:55 AM</option>
+            <option value="4">11:55 - 12:50 AM</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="screen"></div>
+        <!-- Generate rows dynamically with JavaScript -->
+    </div>
+    <p class="text">
+        Confirm Booking for <span id="count">0</span> seats - Total: <span id="total">0</span>
+        <button id="confirmBookingBtn">Confirm Booking</button>
+    </p>
+    <script src="seat.js"></script>
+</body>
+</html>
